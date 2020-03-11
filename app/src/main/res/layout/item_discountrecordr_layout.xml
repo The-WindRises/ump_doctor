@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="26dp">
+
+        <TextView
+            android:id="@+id/discount_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/textColor7"
+            android:textSize="@dimen/font_14"
+            tools:text="2019-07-18 18:18:22" />
+
+        <TextView
+            android:id="@+id/discount_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/textColor12"
+            android:textSize="@dimen/font_14"
+            tools:text="- ￥2500" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="26dp">
+
+
+        <TextView
+            android:id="@+id/channel_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/channel_title"
+            android:textColor="@color/textColor11"
+            android:textSize="@dimen/font_12" />
+
+        <TextView
+            android:id="@+id/channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/channel_title"
+            android:textColor="@color/textColor11"
+            android:textSize="@dimen/font_12"
+            tools:text="招商银行" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="26dp">
+
+        <TextView
+            android:id="@+id/order_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_title"
+            android:textColor="@color/textColor11"
+            android:textSize="@dimen/font_12" />
+
+        <TextView
+            android:id="@+id/order_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/order_title"
+            android:textColor="@color/textColor11"
+            android:textSize="@dimen/font_12"
+            tools:text="86568579879685" />
+    </RelativeLayout>
+
+
+</LinearLayout>

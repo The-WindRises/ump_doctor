@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 圆角矩形 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    android:shape="rectangle"
+    android:uselevel="true">
+
+    <stroke
+        android:width="2dp"
+        android:color="@color/bgColor4"/>
+    <solid android:color="@color/white"/>
+    <corners android:radius="@dimen/len_8"/>
+</shape>

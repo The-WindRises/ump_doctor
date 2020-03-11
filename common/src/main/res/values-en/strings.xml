@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">common</string>
+
+    <string name="system_download_component_disable">Download service is unavailable, please enable it</string>
+    <string name="system_download_description">Version Update</string>
+    <string name="label_year">Years Old</string>
+    <string name="label_day">Days</string>
+    <string name="label_month">Month</string>
+
+</resources>

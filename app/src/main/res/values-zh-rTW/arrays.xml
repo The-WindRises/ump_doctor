@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="typeArray">
+        <item>@string/shift_title</item>
+        <item>@string/leave</item>
+    </string-array>
+    <string-array name="titlesArray">
+        <item></item>
+        <item>@string/attending_doctor</item>
+        <item>@string/residents</item>
+        <item>@string/deputy_chief_physician</item>
+        <item>@string/chief_physician</item>
+    </string-array>
+
+
+    <string-array name="solution">
+        <item>160 * 160</item>
+        <item>180 * 320</item>
+        <item>240 * 320</item>
+        <item>480 * 480</item>
+        <item>360 * 640</item>
+        <item>480 * 640</item>
+        <item>540 * 960</item>
+        <item>720 * 1280</item>
+    </string-array>
+
+    <string-array name="video_fps">
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+
+    <string-array name="audio_sample_rate">
+        <item>16000</item>
+        <item>32000</item>
+        <item>44100</item>
+        <item>48000</item>
+    </string-array>
+
+    <string-array name="days">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>
+</resources>

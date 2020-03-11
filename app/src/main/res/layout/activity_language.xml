@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.language.LanguageActivity">
+
+    <include layout="@layout/common_top1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/currentLanguageTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/current_language"
+            android:textColor="@color/textColor1"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:id="@+id/currentLanguageTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_toRightOf="@+id/currentLanguageTitleTv"
+            android:text=""
+            android:textColor="@color/textColor1"
+            android:textSize="@dimen/font_14" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/languageRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_25"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/chineseRb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/rb_selector"
+            android:paddingHorizontal="@dimen/dp_10"
+            android:text="@string/chinese"
+            android:textSize="@dimen/font_14" />
+
+        <RadioButton
+            android:id="@+id/tradiChineseRb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingHorizontal="@dimen/dp_10"
+            android:button="@drawable/rb_selector"
+            android:text="@string/tradi_chinese"
+            android:textSize="@dimen/font_14" />
+
+        <RadioButton
+            android:id="@+id/englishRb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingHorizontal="@dimen/dp_10"
+            android:button="@drawable/rb_selector"
+            android:text="English"
+            android:textSize="@dimen/font_14" />
+
+    </RadioGroup>
+
+
+    <Button
+
+        android:id="@+id/confirm_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_43"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_25"
+        android:layout_marginRight="@dimen/dp_25"
+        android:background="@drawable/btn_withdrawal"
+        android:text="@string/save"
+        android:textColor="@color/textColor13" />
+
+
+</LinearLayout>

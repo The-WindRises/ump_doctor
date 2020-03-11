@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.login.ModifyLoginPwdActivity">
+
+    <include layout="@layout/common_top1" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/oldPwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_25"
+                    android:text="@string/oldPwd"
+
+                    android:textColor="@color/textColor1"
+                    android:textSize="@dimen/font_14" />
+
+                <EditText
+                    android:id="@+id/oldPwd_Et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_25"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_25"
+                    android:background="@drawable/circular_border_unchecked"
+                    android:hint="@string/oldPwd"
+                    android:inputType="textPassword"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="@dimen/font_14" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/newPwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_25"
+                    android:text="@string/newPwd"
+                    android:textColor="@color/textColor1"
+                    android:textSize="@dimen/font_14" />
+
+                <EditText
+                    android:id="@+id/newPwdPwd_Et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_25"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_25"
+                    android:background="@drawable/circular_border_unchecked"
+                    android:hint="@string/input_new_pwd_tips"
+                    android:inputType="textPassword"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="@dimen/font_14" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/confirmPwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_25"
+                    android:text="@string/confirmPwd"
+                    android:textColor="@color/textColor1"
+                    android:textSize="@dimen/font_14" />
+
+                <EditText
+                    android:id="@+id/confirmPwd_Et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_25"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_25"
+                    android:background="@drawable/circular_border_unchecked"
+                    android:hint="@string/input_new_pwd_tow_tips"
+                    android:inputType="textPassword"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="@dimen/font_14" />
+            </LinearLayout>
+
+            <Button
+
+                android:id="@+id/confirm_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_43"
+                android:layout_marginLeft="@dimen/dp_25"
+                android:layout_marginTop="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_25"
+                android:background="@drawable/btn_withdrawal"
+                android:text="@string/confirm"
+                android:textColor="@color/textColor13" />
+
+        </LinearLayout>
+
+        <it.swiftelink.com.common.widget.stateview.StateView
+            android:id="@+id/stateView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+</LinearLayout>

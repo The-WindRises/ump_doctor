@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.main.ClinicFragment">
+
+    <include layout="@layout/common_top1" />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/hkTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/hk" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/len_36"
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/icon_bg_hospital_title"
+            android:orientation="horizontal">
+
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_marginLeft="@dimen/len_20"-->
+            <!--android:src="@mipmap/title_hospital_hk" />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:text="@string/title_hospital_hk"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_20" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_enter_hk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/len_16"
+                android:text="@string/click_enter"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_18" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/daluTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/dalu" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/len_36"
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/icon_bg_hospital_title"
+            android:orientation="horizontal">
+
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_marginLeft="@dimen/len_20"-->
+            <!--android:src="@mipmap/title_hospital_ch" />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:text="@string/title_hospital_ch"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_20" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_enter_ch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/len_16"
+                android:text="@string/click_enter"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_18" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

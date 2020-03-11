@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/btn_color2">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="38dp">
+
+            <TextView
+                android:id="@+id/order_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="18dp"
+                android:text="@string/order"
+                android:textColor="@color/textColor7"
+                android:textSize="@dimen/font_14" />
+
+            <TextView
+                android:id="@+id/order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/order_title"
+                android:textColor="@color/textColor7"
+                android:textSize="@dimen/font_14"
+                tools:text="645473865436" />
+
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="18dp"
+                android:textColor="@color/textColor7"
+                android:textSize="@dimen/font_14"
+                tools:text="已评价" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lineColor1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/user_icon" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/textColor7"
+                    android:textSize="@dimen/font_14"
+                    tools:text="李文文" />
+
+                <TextView
+                    android:id="@+id/evaluationTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/textColor7"
+                    android:textSize="@dimen/font_14"
+                    tools:text="2019-07-19 22;22;22" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/patientWap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/membership_evaluation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:text="@string/membership_evaluation"
+                    android:textColor="@color/textColor11"
+                    android:textSize="@dimen/font_14" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3">
+
+                <TextView
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/btn_color4"
+                    android:textSize="15sp"
+                    tools:text="4.5分" />
+
+                <it.swiftelink.com.vcs_doctor.weight.MyRatingBar
+                    android:id="@+id/myRatingBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/rating"
+                    android:saveEnabled="false"
+                    app:space_width="5dp"
+                    app:star_height="20dp"
+                    app:star_hollow="@mipmap/ic_rating_bar_hollow"
+                    app:star_max="5"
+                    app:star_rating="0"
+                    app:star_solid="@mipmap/ic_rating_bar_solid"
+                    app:star_width="20dp" />
+
+                <com.zhy.view.flowlayout.TagFlowLayout
+                    android:id="@+id/id_flowlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:layout_below="@+id/rating"
+                    zhy:max_select="-1"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/doctor_wap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/doctor_evaluation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:text="@string/doctor_evaluation"
+                    android:textColor="@color/textColor11"
+                    android:textSize="@dimen/font_14" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3">
+
+                <TextView
+                    android:id="@+id/doctor_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/btn_color4"
+                    android:textSize="15sp"
+                    tools:text="4.5分" />
+
+                <it.swiftelink.com.vcs_doctor.weight.MyRatingBar
+                    android:id="@+id/doctor_MyRatingBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/doctor_rating"
+                    android:saveEnabled="false"
+                    app:space_width="5dp"
+                    app:star_height="20dp"
+                    app:star_hollow="@mipmap/ic_rating_bar_hollow"
+                    app:star_max="5"
+                    app:star_rating="0"
+                    app:star_solid="@mipmap/ic_rating_bar_solid"
+                    app:star_width="20dp" />
+
+                <com.zhy.view.flowlayout.TagFlowLayout
+                    android:id="@+id/id_flowlayout_doctor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/doctor_rating"
+                    android:layout_marginBottom="15dp"
+                    zhy:max_select="-1"></com.zhy.view.flowlayout.TagFlowLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_evaluate_wap"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/lineColor1" />
+
+            <Button
+                android:id="@+id/btn_evaluate"
+                android:layout_width="83dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/btn_evaluate"
+                android:text="@string/btn_evaluate_title"
+                android:textColor="@color/textColor13"
+                android:textSize="@dimen/font_14" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

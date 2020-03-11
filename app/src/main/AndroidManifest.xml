@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="it.swiftelink.com.vcs_doctor">
+
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.Camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <!-- 华为 -->
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- OPPO -->
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <!-- Samsung -->
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+
+    <!-- Apex -->
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+
+    <!-- Sony -->
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <!-- 三星 -->
+    <!--<uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>-->
+    <!--<uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>-->
+    <!-- OPPO -->
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <!-- 联想ZUK -->
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+    <!-- HTC -->
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_app"
+        android:label="@string/app_name"
+        android:maxAspectRatio="2.4"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:resizeableActivity="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+
+        <!-- bugly 配置APP ID -->
+        <meta-data
+            android:name="BUGLY_APPID"
+            android:value="5a34334db5" />
+        <!-- bugly 配置APP版本号 -->
+        <meta-data
+            android:name="BUGLY_APP_VERSION"
+            android:value="1.2.0" />
+        <!-- 配置APP渠道号 -->
+        <meta-data
+            android:name="BUGLY_APP_CHANNEL"
+            android:value="release" />
+
+        <meta-data
+            android:name="BUGLY_ENABLE_DEBUG"
+            android:value="false" />
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.4" /> <!-- 适配华为（huawei）刘海屏 -->
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true" /> <!-- 适配小米（xiaomi）刘海屏 -->
+        <meta-data
+            android:name="notch.config"
+            android:value="portrait|landscape" />
+
+        <activity android:name=".ui.activity.GuidePageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:theme="@style/SplashActivityTheme" />
+        <activity
+            android:name=".ui.activity.videochat.MessageChatActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.user.AgreementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.auth.DepartmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.message.MessageDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.message.MessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.help.HelpDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.login.CountryCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.room.OutpatientAppointActivity"
+            android:screenOrientation="portrait" /> <!-- <activity android:name=".ui.activity.message.MessageActivity" /> -->
+        <activity
+            android:name=".ui.activity.room.ReportDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.room.ConsultationRoomActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.language.LanguageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.help.CustomerServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.login.ModifyPayPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.login.ModifyLoginPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.login.ModifyPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.help.HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.login.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.login.ForgetPsdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.login.BindPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.user.UserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.user.EditUserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.income.MyIncomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.income.DiscountRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.scheduling.SchedulingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.scheduling.SchedRecordsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.consultation.ConsultationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.scheduling.ApplyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.evaluation.MyEvaluationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.auth.AuthenticationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.income.CashChangeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.income.MyWalletActivity"
+
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.activity.income.SmallChangeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.income.MyBankCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.income.AddBankActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.auth.RealNameAuthActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".ui.activity.auth.IdAuthActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.auth.IntroductionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videoChat.ui.TRTCMainActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name=".weight.MyFileProvider"
+            android:authorities="${applicationId}.image_provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths_public" />
+        </provider>
+
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
+        <service android:name=".service.MqttService"></service>
+        <service android:name="com.lzf.easyfloat.service.FloatService" />
+
+        <receiver android:name="it.swiftelink.com.common.update.ApkInstallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".receiver.MyJPushMessageReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <category android:name="it.swiftelink.com.vcs_member"></category>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name=".receiver.PushService"
+            android:process=":pushcore"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+
+
+
+
+    </application>
+
+</manifest>

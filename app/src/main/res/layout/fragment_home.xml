@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.main.HomeFragment">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:fillViewport="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/len_10"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="@dimen/dp_30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/len_16"
+                    android:text="@string/home"
+                    android:textColor="@color/textColor0"
+                    android:textSize="@dimen/font_16"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_msg"
+                    android:layout_width="@dimen/len_20"
+                    android:layout_height="@dimen/len_20"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/len_16"
+                    android:src="@mipmap/icon_msg_no_read" />
+            </RelativeLayout>
+
+            <com.stx.xhb.xbanner.XBanner
+                android:id="@+id/xbanner"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:AutoPlayTime="3000"
+                app:isClipChildrenMode="true"
+                app:isHandLoop="true"
+                app:isShowIndicatorOnlyOne="true"
+                app:isShowNumberIndicator="false"
+                app:pageChangeDuration="2000"
+                app:pointsPosition="CENTER"
+                app:pointsVisibility="true"
+                app:tipTextSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/len_12"
+                android:layout_marginStart="@dimen/len_16"
+                android:layout_marginEnd="@dimen/len_16"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/len_16"
+                    android:layout_height="@dimen/len_16"
+                    android:paddingEnd="@dimen/len_6"
+                    android:src="@mipmap/icon_notification" />
+
+                <TextView
+                    android:id="@+id/diagnosis_month_info_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor11"
+                    android:textSize="@dimen/font_10" />
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_monthly_income"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="0.00"-->
+<!--                    android:textColor="@color/textColor11"-->
+<!--                    android:textSize="@dimen/font_10" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="@dimen/len_10"-->
+<!--                    android:text="@string/monthly_consultation_volume"-->
+<!--                    android:textColor="@color/textColor11"-->
+<!--                    android:textSize="@dimen/font_10" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_monthly_inquiry_amount"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="0"-->
+<!--                    android:textColor="@color/textColor11"-->
+<!--                    android:textSize="@dimen/font_10" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="@dimen/len_10"-->
+<!--                    android:text="@string/current_month_online_hours"-->
+<!--                    android:textColor="@color/textColor11"-->
+<!--                    android:textSize="@dimen/font_10" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_monthly_inquiry_duration"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="0"-->
+<!--                    android:textColor="@color/textColor11"-->
+<!--                    android:textSize="@dimen/font_10" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginLeft="@dimen/len_16"
+                android:layout_marginTop="@dimen/len_24"
+                android:layout_marginRight="@dimen/len_16"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_video_inquiry"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rect_rounded_grey"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="112dp"
+                        android:layout_height="@dimen/len_92"
+                        android:layout_marginTop="@dimen/len_10"
+                        android:src="@mipmap/icon_doctor1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/len_10"
+                        android:text="@string/telemedicine"
+                        android:textColor="@color/textColor7"
+                        android:textSize="@dimen/font_16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/len_6"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_outpatient_appointment"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rect_rounded_grey"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/len_36"
+                            android:layout_height="@dimen/len_40"
+                            android:layout_marginLeft="@dimen/len_24"
+                            android:src="@mipmap/icon_home1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/len_16"
+                            android:text="@string/outpatient_appointment"
+                            android:textColor="@color/textColor7" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_general_training"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/len_6"
+                        android:layout_weight="1"
+                        android:background="@drawable/rect_rounded_grey"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/len_36"
+                            android:layout_height="@dimen/len_40"
+                            android:layout_marginLeft="@dimen/len_24"
+                            android:src="@mipmap/icon_home2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/len_16"
+                            android:text="@string/general_practice_training"
+                            android:textColor="@color/textColor7" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/len_10"
+                android:layout_marginTop="@dimen/len_24"
+                android:background="@color/bgColor1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/len_24"
+                android:layout_marginTop="@dimen/len_16"
+                android:text="@string/latest_order"
+                android:textColor="@color/textColor0" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/len_16"
+                android:background="@color/bgColor1" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_new_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/len_10"
+                android:layout_marginTop="@dimen/len_24"
+                android:background="@color/bgColor1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/len_24"
+                android:layout_marginTop="@dimen/len_16"
+                android:text="@string/number_of_visits_ranking"
+                android:textColor="@color/textColor0"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/len_16"
+                android:background="@color/bgColor1" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_ranking_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/rankingIv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/len_10" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <it.swiftelink.com.common.widget.stateview.StateView
+        android:id="@+id/stateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

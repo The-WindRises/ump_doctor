@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/len_88"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="@dimen/len_52"
+        android:layout_height="@dimen/len_52"
+        android:layout_marginLeft="@dimen/len_24"
+        android:src="@mipmap/icon_man1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/len_16"
+            android:layout_marginTop="@dimen/len_24"
+            android:text="李女士"
+            android:textColor="@color/textColor7"
+            android:textSize="@dimen/font_16" />
+
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:id="@+id/rb_grade"
+            style="@style/RadingStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/font_18"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/len_16"
+            android:layout_marginTop="@dimen/len_8"
+            android:max="5"
+            android:rating="4.5" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="@dimen/len_48"
+        android:layout_height="@dimen/len_24"
+        android:layout_marginTop="@dimen/len_8"
+        android:layout_marginRight="26dp"
+        android:background="@drawable/rect_round_circle1"
+        android:gravity="center"
+        android:text="待抢单"
+        android:textColor="@color/textColor2"
+        android:textSize="@dimen/font_12" />
+
+</LinearLayout>

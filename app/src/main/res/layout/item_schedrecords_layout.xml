@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgColor10"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="26dp">
+
+        <TextView
+            android:id="@+id/old_sched"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/the_original_shift_plan"
+            android:textColor="@color/textColor7"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:id="@+id/old_sched_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/old_sched"
+            android:textColor="@color/textColor7"
+            android:textSize="@dimen/font_14"
+            tools:text="2019-09-09  20:22:33" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayoutg
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/shiftTimeTitleLay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="26dp">
+
+                <TextView
+                    android:id="@+id/shift_time_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shift_time"
+                    android:textColor="@color/textColor7"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:id="@+id/shift_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/shift_time_title"
+                    android:textColor="@color/textColor7"
+                    android:textSize="@dimen/font_14"
+                    tools:text="2019-07-07 20:44:33" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rejectReasonLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="26dp">
+
+                <TextView
+                    android:id="@+id/rejectReasontitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rejectReasontitle"
+                    android:textColor="@color/textColor7"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:id="@+id/rejectReasonTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/rejectReasontitle"
+                    android:textColor="@color/textColor7"
+                    android:textSize="@dimen/font_14"
+                    tools:text="2019-07-07 20:44:33" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/application_time_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/application_time_title"
+                    android:textColor="@color/textColor11"
+                    android:textSize="@dimen/font_12" />
+
+                <TextView
+                    android:id="@+id/application_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/application_time_title"
+                    android:textColor="@color/textColor11"
+                    android:textSize="@dimen/font_12"
+                    tools:text="2019-04-04 20:20:32" />
+
+
+            </RelativeLayout>
+        </LinearLayoutg>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="14dp"
+            android:gravity="right"
+            android:layout_marginRight="26dp">
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="不通过"
+                android:textColor="@color/textColor12"
+                android:textSize="@dimen/font_14" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

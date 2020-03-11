@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/timeTv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_8"
+    android:background="@drawable/checkbox_selector"
+    android:gravity="center"
+    android:paddingLeft="@dimen/dp_25"
+    android:paddingRight="@dimen/dp_25"
+    android:layout_marginLeft="@dimen/dp_25"
+    android:text="20:00-24:00"
+    android:textColor="@drawable/checkbox_txtcolorselector"
+    android:textSize="@dimen/font_14" />

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/len_20"
+    android:layout_marginBottom="@dimen/len_20"
+    android:background="@drawable/flow_evaluate_bg"
+    android:paddingLeft="@dimen/len_8"
+    android:paddingTop="@dimen/len_6"
+    android:paddingRight="@dimen/len_8"
+    android:paddingBottom="@dimen/len_6"
+    android:textColor="@color/color_main_tab"
+    android:textSize="@dimen/font_12">
+</TextView>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">common</string>
+
+    <string name="system_download_component_disable">下載服務不可用,請您啟用</string>
+    <string name="system_download_description">版本更新</string>
+    <string name="label_year">歲</string>
+    <string name="label_day">天</string>
+    <string name="label_month">月</string>
+
+</resources>

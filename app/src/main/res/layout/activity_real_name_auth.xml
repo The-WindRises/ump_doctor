@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.activity.auth.RealNameAuthActivity">
+
+    <include layout="@layout/common_top1" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <include layout="@layout/progress_indicator_layout" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/lineColor1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/xinhao3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="*"
+                            android:textColor="@color/textColor4"
+                            android:textSize="@dimen/font_14" />
+
+                        <TextView
+                            android:id="@+id/qualification_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_toRightOf="@+id/xinhao3"
+                            android:text="@string/certificate_practice_title1"
+                            android:textColor="@color/textColor1"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/qualification_Positive"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp_100"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_weight="1"
+                            android:src="@mipmap/certificate1" />
+
+                        <ImageView
+                            android:id="@+id/qualification_Side"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp_100"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_weight="1"
+                            android:src="@mipmap/certificate2" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/xinhao4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="28dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="*"
+                            android:textColor="@color/textColor4"
+                            android:textSize="@dimen/font_12" />
+
+                        <TextView
+                            android:id="@+id/tips1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_toRightOf="@+id/xinhao4"
+                            android:text="@string/upload_practice_page_image"
+                            android:textColor="@color/textColor6"
+                            android:textSize="@dimen/sp_12" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp">
+
+                        <TextView
+                            android:id="@+id/xinhao7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="*"
+                            android:textColor="@color/textColor4"
+                            android:textSize="@dimen/font_12" />
+
+                        <TextView
+                            android:id="@+id/qualification_numbertitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/xinhao7"
+                            android:text="@string/qualification_numbertitle"
+                            android:textColor="@color/textColor1"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/qualification_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@+id/qualification_numbertitle"
+                            android:background="@null"
+                            android:hint="@string/input_certificateProfessional_title"
+                            android:inputType="number"
+                            android:textColor="@color/textColor1"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/lineColor1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/xinhao6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="*"
+                            android:textColor="@color/textColor4"
+                            android:textSize="@dimen/font_14"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/doctorstitle_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_toRightOf="@+id/xinhao6"
+                            android:text="@string/doctorstitle_title"
+                            android:textColor="@color/textColor1"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/doctorstitle_Positive"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp_100"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_weight="1"
+                            android:src="@mipmap/certificate1" />
+
+                        <ImageView
+                            android:id="@+id/doctorstitle_Side"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp_100"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_weight="1"
+                            android:src="@mipmap/certificate2" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/xinhao8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="28dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="*"
+                            android:textColor="@color/textColor4"
+                            android:textSize="@dimen/font_12"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/tips3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_toRightOf="@+id/xinhao8"
+                            android:text="@string/upload_doctor_title_certificate_image"
+                            android:textColor="@color/textColor6"
+                            android:textSize="@dimen/sp_12" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp">
+
+                        <TextView
+                            android:id="@+id/xinhao5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="*"
+                            android:textColor="@color/textColor4"
+                            android:textSize="@dimen/font_12"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/other_numbertitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/xinhao5"
+                            android:text="@string/qualification_numbertitle"
+                            android:textColor="@color/textColor1"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/doctorstitlenumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@+id/other_numbertitle"
+                            android:background="@null"
+                            android:hint="@string/input_certificateProfessional_title"
+                            android:textColor="@color/textColor1"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/lineColor1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/xinhao11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="*"
+                            android:textColor="@color/textColor4"
+                            android:textSize="@dimen/font_14"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/qualification1_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_toRightOf="@+id/xinhao11"
+                            android:text="@string/qualification1_title"
+                            android:textColor="@color/textColor1"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/qualification1_Positive"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp_100"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_weight="1"
+                            android:src="@mipmap/certificate1" />
+
+                        <ImageView
+                            android:id="@+id/qualification1_Side"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp_100"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_weight="1"
+                            android:src="@mipmap/certificate2" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp">
+
+                        <TextView
+                            android:id="@+id/xinhao12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="*"
+                            android:textColor="@color/textColor4"
+                            android:textSize="@dimen/font_12"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/qualification1title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/xinhao12"
+                            android:text="@string/qualification_numbertitle"
+                            android:textColor="@color/textColor1"
+                            android:textSize="15sp"
+                            android:visibility="visible" />
+
+                        <EditText
+                            android:id="@+id/qualification1_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@+id/qualification1title"
+                            android:background="@null"
+                            android:hint="@string/input_certificateProfessional_title"
+                            android:inputType="number"
+                            android:textColor="@color/textColor1"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/lineColor1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/xinhao9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="*"
+                            android:textColor="@color/textColor4"
+                            android:textSize="@dimen/font_14"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/other_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_toRightOf="@+id/xinhao9"
+                            android:text="@string/input_other_title"
+                            android:textColor="@color/textColor1"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/other_Positive"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp_100"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_weight="1"
+                            android:src="@mipmap/certificate1" />
+
+                        <ImageView
+                            android:id="@+id/other_Side"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp_100"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_weight="1"
+                            android:src="@mipmap/certificate2" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginBottom="20dp">
+
+                        <TextView
+                            android:id="@+id/xinhao10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="*"
+                            android:textColor="@color/textColor4"
+                            android:textSize="@dimen/font_12"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/doctorstitle_numbertitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/xinhao10"
+                            android:text="@string/qualification_numbertitle"
+                            android:textColor="@color/textColor1"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/otherNumberEt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@+id/doctorstitle_numbertitle"
+                            android:background="@null"
+                            android:hint="@string/input_certificateProfessional_title"
+                            android:inputType="number"
+                            android:textColor="@color/textColor1"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/auth_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/btn_withdrawal"
+                    android:text="@string/auth"
+                    android:textColor="@color/textColor13" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <it.swiftelink.com.common.widget.stateview.StateView
+            android:id="@+id/stateView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+</LinearLayout>

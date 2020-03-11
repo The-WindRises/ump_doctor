@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.room.ConsultationRoomActivity">
+
+    <include layout="@layout/common_top1" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/consulation_sr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlPrimaryColor="@color/btn_color1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="200dp"
+            android:background="@color/bgColor11"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/userIconIv"
+                    android:layout_width="@dimen/dp_92"
+                    android:layout_height="@dimen/dp_92"
+                    android:src="@mipmap/img_dc_woman" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/nameTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:text=""
+                        android:textColor="@color/textColor13"
+                        android:textSize="@dimen/font_16" />
+
+
+                    <TextView
+                        android:id="@+id/postsTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_toRightOf="@+id/nameTv"
+                        android:text=""
+                        android:textColor="@color/textColor13"
+                        android:textSize="@dimen/font_12" />
+
+                    <com.suke.widget.SwitchButton
+                        android:id="@+id/switch_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_25"
+
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10">
+
+
+                    <TextView
+                        android:id="@+id/tv_online_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_online_time"
+                        android:textColor="@color/textColor13"
+                        android:textSize="@dimen/font_12" />
+
+                    <TextView
+                        android:id="@+id/onlineTimetv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/len_10"
+                        android:layout_toRightOf="@+id/tv_online_time"
+                        android:textColor="@color/textColor13"
+                        android:textSize="@dimen/font_12" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10">
+
+                    <TextView
+                        android:id="@+id/schedulingTodayTitleTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/scheduling_today"
+                        android:textColor="@color/textColor13"
+                        android:textSize="@dimen/font_12" />
+
+                    <TextView
+                        android:id="@+id/cumulativeTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_toRightOf="@+id/schedulingTodayTitleTv"
+                        android:text=""
+                        android:textColor="@color/textColor13"
+                        android:textSize="@dimen/font_12" />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/cumulativeTitleTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cumulative_length"
+                        android:textColor="@color/textColor13"
+                        android:textSize="@dimen/font_12" />
+            <LinearLayout
+                android:id="@+id/cumulative_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="200dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/dp_10"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <it.swiftelink.com.common.widget.stateview.StateView
+                android:id="@+id/stateView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/trans"
+                android:visibility="gone" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

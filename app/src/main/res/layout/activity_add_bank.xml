@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor1"
+    android:orientation="vertical"
+    tools:context=".ui.activity.income.AddBankActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/common_top1"></include>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="@string/plase_buind_backcard"
+                android:textColor="@color/textColor1"
+                android:textSize="@dimen/font_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bgColor10"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/crdholder_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="@string/crdholder"
+                        android:textColor="@color/textColor1"
+                        android:textSize="@dimen/font_14" />
+
+                    <EditText
+                        android:id="@+id/crdholder_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/crdholder_title"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_toRightOf="@+id/crdholder_title"
+                        android:background="@null"
+                        android:hint="吴磊"
+                        android:textColor="@color/textColor1"
+                        android:textSize="@dimen/font_14" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/crdholder_title"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/lineColor1" />
+
+                    <TextView
+                        android:id="@+id/card_number_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/crdholder_title"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="@string/card_number_title"
+                        android:textColor="@color/textColor1"
+                        android:textSize="@dimen/font_14" />
+
+                    <EditText
+                        android:id="@+id/cardNumber_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/crdholder_title"
+                        android:layout_alignLeft="@+id/crdholder_et"
+                        android:layout_alignBottom="@+id/card_number_title"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_toRightOf="@+id/card_number_title"
+                        android:background="@null"
+                        android:hint="695869856798987965"
+                        android:inputType="number"
+                        android:textColor="@color/textColor1"
+                        android:textSize="@dimen/font_14" />
+
+                    <View
+                        android:id="@+id/line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/card_number_title"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/lineColor1" />
+
+                    <TextView
+                        android:id="@+id/opening_bank_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/card_number_title"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="@string/opening_bank_title"
+                        android:textColor="@color/textColor1"
+                        android:textSize="@dimen/font_14" />
+
+                    <EditText
+                        android:id="@+id/openingBank_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/card_number_title"
+                        android:layout_alignLeft="@+id/cardNumber_et"
+                        android:layout_alignBottom="@+id/opening_bank_title"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_toRightOf="@+id/card_number_title"
+                        android:background="@null"
+                        android:enabled="true"
+                        android:hint="招商银行"
+                        android:textColor="@color/textColor1"
+                        android:textSize="@dimen/font_14" />
+
+                    <ImageView
+                        android:id="@+id/right_iv"
+                        android:layout_width="8dp"
+                        android:layout_height="14dp"
+                        android:layout_below="@+id/card_number_title"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginBottom="15dp"
+                        android:src="@mipmap/icon_right"
+                        android:visibility="gone" />
+
+
+                    <View
+                        android:id="@+id/line2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/opening_bank_title"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/lineColor1" />
+
+                    <TextView
+                        android:id="@+id/phone_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/opening_bank_title"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="@string/phone_title"
+                        android:textColor="@color/textColor1"
+                        android:textSize="@dimen/font_14" />
+
+
+                    <EditText
+                        android:id="@+id/phoneNumber_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/opening_bank_title"
+                        android:layout_alignLeft="@+id/openingBank_et"
+                        android:layout_alignBottom="@+id/phone_title"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_toRightOf="@+id/phone_title"
+                        android:background="@null"
+                        android:hint="133794132376"
+                        android:inputType="number"
+                        android:textColor="@color/textColor1"
+                        android:textSize="@dimen/font_14" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/phone_title"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/lineColor1" />
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/confirm_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="24dp"
+                    android:background="@drawable/btn_withdrawal"
+                    android:text="@string/confirm"
+                    android:textColor="@color/textColor13"
+
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <it.swiftelink.com.common.widget.stateview.StateView
+            android:id="@+id/stateView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</LinearLayout>

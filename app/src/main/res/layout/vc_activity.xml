@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor7"
+    android:keepScreenOn="true">
+
+    <RelativeLayout
+        android:id="@+id/voidoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgColor7"
+        android:keepScreenOn="true"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/cloudVideoViewContainer"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/len_60">
+
+                <TextView
+                    android:id="@+id/tv_to_message_chat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/btn_color1"
+                    android:gravity="center"
+                    android:text="@string/image_string_communicate"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_16" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp">
+
+            <ImageView
+                android:id="@+id/minIV"
+                android:layout_width="@dimen/len_28"
+                android:layout_height="@dimen/len_28"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginLeft="15dp"
+                android:clickable="true"
+                android:src="@mipmap/em_call_zoomin" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/networkStateTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="当前网络差"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/font_16"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/timeTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/font_16" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/len_100"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/cameraIV"
+                            android:layout_width="66dp"
+                            android:layout_height="66dp"
+                            android:layout_gravity="center"
+                            android:clickable="true"
+                            android:src="@mipmap/icon_camera" />
+
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/exitIV"
+                            android:layout_width="66dp"
+                            android:layout_height="66dp"
+                            android:layout_gravity="center"
+                            android:clickable="true"
+                            android:src="@mipmap/em_call_hangup" />
+
+
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/audioIV"
+                            android:layout_width="66dp"
+                            android:layout_height="66dp"
+                            android:layout_gravity="center"
+                            android:clickable="true"
+                            android:src="@mipmap/audio_close" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_wait_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_center_dialog"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/font_16">
+
+            <net.qiujuer.genius.ui.widget.Loading
+                android:id="@+id/loading_wait"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="@dimen/len_32"
+                android:layout_height="@dimen/len_32"
+                android:layout_marginBottom="@dimen/len_10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="等待对方进入..."
+                android:textSize="@dimen/font_18" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/chartLaytou"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.tencent.qcloud.tim.uikit.modules.chat.ChatLayout
+            android:id="@+id/chat_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_20" />
+
+    </LinearLayout>
+
+</RelativeLayout>

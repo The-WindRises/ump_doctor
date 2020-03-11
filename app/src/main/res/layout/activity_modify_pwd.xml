@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".ui.activity.login.ModifyPwdActivity">
+
+    <include layout="@layout/common_top1" />
+
+
+    <RelativeLayout
+        android:id="@+id/modifylogin_wap"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48">
+
+        <TextView
+            android:id="@+id/modify_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp_25"
+            android:text="@string/modify_login"
+            android:textColor="@color/textColor1"
+            android:textSize="@dimen/font_14" />
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp_25"
+            android:src="@mipmap/icon_right" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/lineColor1" />
+
+    <RelativeLayout
+        android:id="@+id/modifypay_wap"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48">
+
+        <TextView
+            android:id="@+id/modify_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp_25"
+            android:text="@string/modify_pay"
+            android:textColor="@color/textColor1"
+            android:textSize="@dimen/font_14" />
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp_25"
+            android:src="@mipmap/icon_right" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/lineColor1" />
+</LinearLayout>

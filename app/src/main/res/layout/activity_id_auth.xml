@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.activity.auth.IdAuthActivity">
+
+    <include layout="@layout/common_top1" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <include layout="@layout/progress_indicator_layout" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/lineColor1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/xinhao1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="*"
+                        android:textColor="@color/textColor4"
+                        android:textSize="@dimen/font_14" />
+
+                    <TextView
+                        android:id="@+id/idCare_tilte"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="@dimen/dp_15"
+                        android:layout_toRightOf="@+id/xinhao1"
+                        android:text="@string/idCare_tilte"
+                        android:textColor="@color/textColor1"
+                        android:textSize="@dimen/font_14" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/idCard_Positive"
+                        android:layout_width="0dp"
+                        android:layout_height="99dp"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="14dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="1"
+                        android:src="@mipmap/img_card01" />
+
+                    <ImageView
+                        android:id="@+id/idCard_Side"
+                        android:layout_width="0dp"
+                        android:layout_height="99dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="28dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="1"
+                        android:src="@mipmap/img_card01" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/xinhao2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="*"
+                        android:textColor="@color/textColor4"
+                        android:textSize="@dimen/font_12" />
+
+                    <TextView
+                        android:id="@+id/idcard_tips"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_toRightOf="@+id/xinhao2"
+                        android:text="@string/notice_take_phone"
+                        android:textSize="@dimen/sp_12" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/lineColor1" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/xinhao3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="*"
+                    android:textColor="@color/textColor4"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:id="@+id/idCareNum_tilte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/xinhao3"
+                    android:text="@string/idCard_number_title"
+                    android:textColor="@color/textColor1"
+                    android:textSize="@dimen/font_14" />
+
+                <EditText
+                    android:id="@+id/idCardNum_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/idCareNum_tilte"
+                    android:background="@null"
+                    android:hint="@string/please_enter_id_number"
+                    android:textSize="@dimen/font_14" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/lineColor1">
+
+                <Button
+                    android:id="@+id/next_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/btn_withdrawal"
+                    android:text="@string/next"
+                    android:textColor="@color/textColor13" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <it.swiftelink.com.common.widget.stateview.StateView
+            android:id="@+id/stateView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+
+</LinearLayout>

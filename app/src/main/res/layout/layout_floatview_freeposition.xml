@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="200dp">
+
+        <RelativeLayout
+            android:id="@+id/touchBt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/len_16"
+            android:background="@drawable/gray_rect"
+            android:elevation="1px"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/cloudVideoViewContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/iv_open_video_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/len_6"
+                android:src="@mipmap/icon_open" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</merge>

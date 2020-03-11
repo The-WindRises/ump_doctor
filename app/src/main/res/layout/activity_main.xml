@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.activity.MainActivity">
+
+    <it.swiftelink.com.vcs_doctor.weight.CustomViewPager
+        android:id="@+id/vp_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/len_52" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/line_mian"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/len_52"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_52"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:background="@color/btn_color3">
+
+        <TextView
+            android:id="@+id/tv_tab_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/len_16"
+            android:layout_weight="2"
+            android:drawableTop="@drawable/btn_home"
+            android:gravity="center"
+            android:paddingTop="@dimen/len_8"
+            android:text="@string/home"
+            android:textColor="@color/color_main_tab"
+            android:textSize="@dimen/font_12" />
+
+        <TextView
+            android:id="@+id/tv_tab_hospital"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/len_16"
+            android:layout_weight="2"
+            android:drawableTop="@drawable/btn_hosptal"
+            android:gravity="center"
+            android:paddingTop="@dimen/len_8"
+            android:text="@string/clinic"
+            android:textColor="@color/color_main_tab"
+            android:textSize="@dimen/font_12" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3" />
+
+        <TextView
+            android:id="@+id/tv_tab_find"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/len_16"
+            android:layout_weight="2"
+            android:drawableTop="@drawable/btn_find"
+            android:gravity="center"
+            android:paddingTop="@dimen/len_8"
+            android:text="@string/find"
+            android:textColor="@color/color_main_tab"
+            android:textSize="@dimen/font_12" />
+
+        <TextView
+            android:id="@+id/tv_tab_my"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/len_16"
+            android:layout_marginRight="@dimen/len_16"
+            android:layout_weight="2"
+            android:drawableTop="@drawable/btn_my"
+            android:gravity="center"
+            android:paddingTop="@dimen/len_8"
+            android:text="@string/me"
+            android:textColor="@color/color_main_tab"
+            android:textSize="@dimen/font_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_to_video_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/len_80"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/len_52"
+            android:layout_height="@dimen/len_52"
+            android:padding="@dimen/len_4"
+            android:background="@drawable/circle_grey"
+            android:src="@mipmap/icon_video_chat"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_video_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/len_4"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/go_to_doctor_office"
+            android:textColor="@color/color_main_tab"
+            android:textSize="@dimen/len_12" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgColor10"
+    tools:context=".ui.activity.room.OutpatientAppointActivity">
+
+
+    <include layout="@layout/common_top1" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@mipmap/yuyue"></ImageView>
+
+    <RelativeLayout
+        android:id="@+id/callPhoneBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@color/textColor5">
+
+        <ImageView
+            android:layout_width="@dimen/dp_21"
+            android:layout_height="@dimen/dp_21"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_8"
+            android:tint="@color/white"
+            android:layout_toLeftOf="@+id/callPhone"
+            android:src="@mipmap/phone" />
+
+        <TextView
+            android:id="@+id/callPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/callPhone"
+            android:textColor="@color/textColor13"
+            android:textSize="@dimen/sp_16" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

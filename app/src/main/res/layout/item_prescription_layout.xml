@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/drugNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:layout_marginTop="@dimen/dp_18"
+            android:layout_marginBottom="@dimen/dp_18"
+            android:layout_toLeftOf="@+id/priceTitle"
+            android:text="修正感冒清热解毒胶囊"
+            android:layout_marginRight="@dimen/dp_20"
+            android:textColor="@color/textColor1"
+            android:textSize="@dimen/font_14" />
+
+
+        <TextView
+            android:id="@+id/priceTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp_18"
+            android:layout_toLeftOf="@+id/priceTv"
+            android:text="@string/price"
+            android:textColor="@color/textColor11"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:id="@+id/priceTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp_18"
+            android:text="￥38"
+            android:textColor="@color/textColor11"
+            android:textSize="@dimen/font_14" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/specificationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:layout_marginBottom="@dimen/dp_18"
+            android:text="@string/specification"
+            android:textColor="@color/textColor11"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:id="@+id/specificationTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_18"
+            android:layout_toRightOf="@+id/specificationTitle"
+            android:text="6粒*2"
+            android:textColor="@color/textColor11"
+            android:textSize="@dimen/font_14" />
+
+
+        <TextView
+            android:id="@+id/unitTtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:layout_toRightOf="@+id/specificationTv"
+            android:text="@string/unit"
+            android:visibility="gone"
+            android:textColor="@color/textColor11"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:id="@+id/unitTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:layout_toRightOf="@+id/unitTtitle"
+            android:text="盒"
+            android:visibility="gone"
+            android:textColor="@color/textColor11"
+            android:textSize="@dimen/font_14" />
+
+
+        <TextView
+            android:id="@+id/quantityTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp_18"
+            android:text="x1"
+            android:textColor="@color/textColor11"
+            android:textSize="@dimen/font_14" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/countTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp_18"
+            android:layout_marginBottom="@dimen/dp_18"
+            android:layout_toLeftOf="@+id/totalTitle"
+            android:text="@string/count_tv"
+            android:textColor="@color/textColor6"
+            android:textSize="@dimen/font_12" />
+
+        <TextView
+            android:id="@+id/totalTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp_4"
+            android:layout_toLeftOf="@+id/totalTv"
+            android:text="@string/total"
+            android:textColor="@color/textColor12"
+            android:textSize="@dimen/font_12" />
+
+        <TextView
+            android:id="@+id/totalTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp_18"
+            android:text="￥38"
+            android:textColor="@color/textColor12"
+            android:textSize="@dimen/font_12" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/lineColor1" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/usageMethodTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:layout_marginTop="@dimen/dp_18"
+            android:text="@string/usage_method"
+            android:textSize="@dimen/font_12" />
+
+        <TextView
+            android:id="@+id/usageMethodTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_toRightOf="@+id/usageMethodTitle"
+            android:text="口服"
+            android:textColor="@color/textColor7"
+            android:textSize="@dimen/font_12" />
+
+
+        <TextView
+            android:id="@+id/frequencyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp_8"
+            android:layout_toLeftOf="@+id/frequencyTv"
+            android:text="@string/frequency"
+            android:textSize="@dimen/font_12" />
+
+        <TextView
+            android:id="@+id/frequencyTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp_18"
+            android:text="一日一次"
+            android:textColor="@color/textColor7"
+            android:textSize="@dimen/font_12" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dosageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="@string/dosage"
+            android:textSize="@dimen/font_12" />
+
+        <TextView
+            android:id="@+id/dosageTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_toRightOf="@+id/dosageTitle"
+            android:text="两粒"
+            android:textColor="@color/textColor7"
+            android:textSize="@dimen/font_12" />
+
+
+        <TextView
+            android:id="@+id/unitTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_8"
+            android:layout_toLeftOf="@+id/unitCiTv"
+            android:text="@string/unitTitle"
+            android:textSize="@dimen/font_12" />
+
+        <TextView
+            android:id="@+id/unitCiTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_18"
+            android:text="粒"
+            android:textColor="@color/textColor7"
+            android:textSize="@dimen/font_12" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/daysTakenle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="@string/days_taken"
+
+            android:textSize="@dimen/font_12" />
+
+        <TextView
+            android:id="@+id/daysTakenTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_toRightOf="@+id/daysTakenle"
+            android:text="两粒"
+            android:textColor="@color/textColor7"
+            android:textSize="@dimen/font_12" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_18"
+        android:background="@color/lineColor1" />
+
+
+
+</LinearLayout>
